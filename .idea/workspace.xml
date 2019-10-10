@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da78410e-6d2d-4687-84c8-234c0b5a8961" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/becomeateasewithjava8/Lambda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/becomeateasewithjava8/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/becomeateasewithjava8/TransactionLambda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/becomeateasewithjava8/enums/Department.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/becomeateasewithjava8/model/Employe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/becomeateasewithjava8/LambdaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/becomeateasewithjava8/builders/EmployeeBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/becomeateasewithjava8/predicates/EmployeePredicates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/becomeateasewithjava8/EmployeeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/becomeateasewithjava8/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/becomeateasewithjava8/model/Employe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/becomeateasewithjava8/model/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/becomeateasewithjava8/LambdaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/becomeateasewithjava8/LambdaTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,23 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/becomeateasewithjava8/LambdaTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/becomeateasewithjava8/Lambda.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="79" lean-forward="true" selection-start-line="10" selection-start-column="79" selection-end-line="10" selection-end-column="79" />
+            <state relative-caret-position="202">
+              <caret line="20" column="60" lean-forward="true" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -46,41 +33,72 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/becomeateasewithjava8/Transaction.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/becomeateasewithjava8/TransactionLambda.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="366">
+              <caret line="44" column="21" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/becomeateasewithjava8/model/Employe.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/becomeateasewithjava8/EmployeeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+            <state relative-caret-position="502">
+              <caret line="48" selection-start-line="48" selection-end-line="48" />
               <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/becomeateasewithjava8/model/Employee.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#506#507#0" expanded="true" />
                 <element signature="e#532#533#0" expanded="true" />
-                <element signature="e#567#568#0" expanded="true" />
-                <element signature="e#597#598#0" expanded="true" />
                 <element signature="e#628#629#0" expanded="true" />
                 <element signature="e#655#656#0" expanded="true" />
-                <element signature="e#695#696#0" expanded="true" />
-                <element signature="e#727#728#0" expanded="true" />
                 <element signature="e#768#769#0" expanded="true" />
                 <element signature="e#801#802#0" expanded="true" />
-                <element signature="e#857#858#0" expanded="true" />
-                <element signature="e#901#902#0" expanded="true" />
                 <element signature="e#934#935#0" expanded="true" />
                 <element signature="e#963#964#0" expanded="true" />
-                <element signature="e#1007#1008#0" expanded="true" />
-                <element signature="e#1043#1044#0" expanded="true" />
+                <element signature="e#1121#1122#0" expanded="true" />
+                <element signature="e#1158#1159#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/becomeateasewithjava8/builders/EmployeeBuilder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#682#683#0" expanded="true" />
+                <element signature="e#718#719#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/becomeateasewithjava8/predicates/EmployeePredicates.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="236">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#270#271#0" expanded="true" />
+                <element signature="e#299#300#0" expanded="true" />
+                <element signature="e#1095#1096#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -125,12 +143,16 @@
         <option value="$PROJECT_DIR$/src/test/java/BasicTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/basic/BasicTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/basic/BasicClass.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/becomeateasewithjava8/enums/Department.java" />
-        <option value="$PROJECT_DIR$/src/main/java/becomeateasewithjava8/model/Employe.java" />
-        <option value="$PROJECT_DIR$/src/test/java/becomeateasewithjava8/LambdaTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/becomeateasewithjava8/Transaction.java" />
         <option value="$PROJECT_DIR$/src/main/java/becomeateasewithjava8/Lambda.java" />
+        <option value="$PROJECT_DIR$/src/main/java/becomeateasewithjava8/model/Employe.java" />
+        <option value="$PROJECT_DIR$/src/main/java/becomeateasewithjava8/builders/EmployeeBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/becomeateasewithjava8/model/Employee.java" />
+        <option value="$PROJECT_DIR$/src/test/java/becomeateasewithjava8/EmployeeTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/becomeateasewithjava8/predicates/EmployeePredicates.java" />
+        <option value="$PROJECT_DIR$/src/test/java/becomeateasewithjava8/LambdaTest.java" />
       </list>
     </option>
   </component>
@@ -184,6 +206,15 @@
               <item name="Java8Practices" type="b2602c69:ProjectViewProjectNode" />
               <item name="Java8Practices" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="becomeateasewithjava8" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java8Practices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java8Practices" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -201,6 +232,14 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="basic" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Java8Practices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java8Practices" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="becomeateasewithjava8" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -211,11 +250,12 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570744477354" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570749966559" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../BecomeAtEaseWithJava8" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -309,7 +349,7 @@
       <option name="presentableId" value="Default" />
       <updated>1570677476139</updated>
       <workItem from="1570677480047" duration="4795000" />
-      <workItem from="1570742917769" duration="1348000" />
+      <workItem from="1570742917769" duration="7015000" />
     </task>
     <task id="LOCAL-00001" summary="main">
       <created>1570678151260</created>
@@ -332,13 +372,17 @@
       <option name="project" value="LOCAL" />
       <updated>1570681391179</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="some models, lambda code and first test with lambdas">
+      <created>1570744519641</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1570744519641</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_Java8Practices_(3) - 2019.10.09 at 23h 02m 38s.xml">
-      <configuration name="All in Java8Practices (3)" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_Java8Practices_(3) - 2019.10.09 at 23h 04m 34s.xml">
       <configuration name="All in Java8Practices (3)" configurationId="JUnit" />
     </history-entry>
@@ -360,9 +404,18 @@
     <history-entry file="All_in_Java8Practices - 2019.10.09 at 23h 11m 40s.xml">
       <configuration name="All in Java8Practices" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="LambdaTest_shouldRemoveStringsWithMoreThanThreeCharacters - 2019.10.10 at 16h 54m 45s.xml">
+      <configuration name="LambdaTest.shouldRemoveStringsWithMoreThanThreeCharacters" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LambdaTest_shouldRemoveStringsWithMoreThanThreeCharacters - 2019.10.10 at 18h 25m 40s.xml">
+      <configuration name="LambdaTest.shouldRemoveStringsWithMoreThanThreeCharacters" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LambdaTest_shouldRemoveStringsWithMoreThanThreeCharacters - 2019.10.10 at 18h 25m 53s.xml">
+      <configuration name="LambdaTest.shouldRemoveStringsWithMoreThanThreeCharacters" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6143000" />
+    <option name="totallyTimeSpent" value="11810000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -377,7 +430,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25302014" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25302014" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -386,7 +439,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -415,7 +468,8 @@
     <MESSAGE value="main" />
     <MESSAGE value="added junit and basic tests" />
     <MESSAGE value="gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="gitignore" />
+    <MESSAGE value="some models, lambda code and first test with lambdas" />
+    <option name="LAST_COMMIT_MESSAGE" value="some models, lambda code and first test with lambdas" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
@@ -459,42 +513,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/becomeateasewithjava8/enums/Department.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/becomeateasewithjava8/model/Employe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
-          <folding>
-            <element signature="e#506#507#0" expanded="true" />
-            <element signature="e#532#533#0" expanded="true" />
-            <element signature="e#567#568#0" expanded="true" />
-            <element signature="e#597#598#0" expanded="true" />
-            <element signature="e#628#629#0" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
-            <element signature="e#695#696#0" expanded="true" />
-            <element signature="e#727#728#0" expanded="true" />
-            <element signature="e#768#769#0" expanded="true" />
-            <element signature="e#801#802#0" expanded="true" />
-            <element signature="e#857#858#0" expanded="true" />
-            <element signature="e#901#902#0" expanded="true" />
-            <element signature="e#934#935#0" expanded="true" />
-            <element signature="e#963#964#0" expanded="true" />
-            <element signature="e#1007#1008#0" expanded="true" />
-            <element signature="e#1043#1044#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -523,7 +545,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/becomeateasewithjava8/Transaction.java">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/becomeateasewithjava8/TransactionLambda.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -532,20 +558,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/becomeateasewithjava8/LambdaTest.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/function/Predicate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="226">
+          <caret line="78" column="25" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
+          <folding>
+            <element signature="e#2038#2039#0" expanded="true" />
+            <element signature="e#2076#2077#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/becomeateasewithjava8/model/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#506#507#0" expanded="true" />
+            <element signature="e#532#533#0" expanded="true" />
+            <element signature="e#628#629#0" expanded="true" />
+            <element signature="e#655#656#0" expanded="true" />
+            <element signature="e#768#769#0" expanded="true" />
+            <element signature="e#801#802#0" expanded="true" />
+            <element signature="e#934#935#0" expanded="true" />
+            <element signature="e#963#964#0" expanded="true" />
+            <element signature="e#1121#1122#0" expanded="true" />
+            <element signature="e#1158#1159#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/becomeateasewithjava8/builders/EmployeeBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#682#683#0" expanded="true" />
+            <element signature="e#718#719#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/becomeateasewithjava8/Lambda.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="79" lean-forward="true" selection-start-line="10" selection-start-column="79" selection-end-line="10" selection-end-column="79" />
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/becomeateasewithjava8/EmployeeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="44" column="21" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/Optional.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="251" column="13" selection-start-line="251" selection-start-column="13" selection-end-line="251" selection-end-column="13" />
+          <folding>
+            <element signature="e#3486#3487#0" expanded="true" />
+            <element signature="e#3544#3545#0" expanded="true" />
+            <element signature="e#8628#8629#0" expanded="true" />
+            <element signature="e#8680#8681#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/becomeateasewithjava8/predicates/EmployeePredicates.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#270#271#0" expanded="true" />
+            <element signature="e#299#300#0" expanded="true" />
+            <element signature="e#1095#1096#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/becomeateasewithjava8/LambdaTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="20" column="60" lean-forward="true" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
