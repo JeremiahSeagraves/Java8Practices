@@ -6,4 +6,6 @@
     - https://www.udemy.com/course/become-at-ease-with-java-8/
 - Stackify streams
     - https://stackify.com/streams-guide-java-8/
+- Java code geeks
+    - https://www.javacodegeeks.com/java-8-tutorials
 
