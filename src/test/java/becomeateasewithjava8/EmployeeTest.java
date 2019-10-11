@@ -23,10 +23,10 @@ public class EmployeeTest {
     public void shouldReturnMaleEmployees() {
         List<Employee> employees = asList(
                 EmployeeBuilder.builder().name("John").age(20).department(Department.DEVELOPMENT).salary(9999d).gender('M').build(),
-                new Employee("Mary", 22, Department.DEVELOPMENT, 9999d, 'F'),
-                new Employee("Laura", 21, Department.DEVELOPMENT, 9999d, 'F'),
-                new Employee("Frank", 20, Department.DEVELOPMENT, 9999d, 'M'),
-                new Employee("Peter", 24, Department.DESIGN, 3000d, 'M')
+                EmployeeBuilder.builder().name("Mary").age(22).department(Department.DEVELOPMENT).salary(9999d).gender('F').build(),
+                EmployeeBuilder.builder().name("Laura").age(21).department(Department.DEVELOPMENT).salary(9999d).gender('F').build(),
+                EmployeeBuilder.builder().name("Frank").age(20).department(Department.DEVELOPMENT).salary(9999d).gender('M').build(),
+                EmployeeBuilder.builder().name("Peter").age(24).department(Department.DESIGN).salary(3000d).gender('M').build()
         );
         employees = employees.stream().filter(EmployeePredicates.isMale()).collect(Collectors.toList());
 
