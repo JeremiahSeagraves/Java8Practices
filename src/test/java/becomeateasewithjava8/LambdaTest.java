@@ -1,5 +1,6 @@
 package becomeateasewithjava8;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
@@ -22,6 +23,7 @@ public class LambdaTest {
     }
 
     @Test
+    @Disabled
     public void shouldBeExecutedWitingATransaction() {
         TransactionLambda lambda = new TransactionLambda();
         //Lambda.processWithinTransaction(lambda);
@@ -29,12 +31,14 @@ public class LambdaTest {
     }
 
     @Test
+    @Disabled
     public void shouldCreateAString() {
         String bigString = Lambda.create();
         assertTrue(bigString.length() > 0);
     }
 
     @Test
+    @Disabled
     public void extractStringSize() {
         String myString = "This is great";
         int length = Lambda.getStringLength(myString/* get string length*/);
@@ -42,6 +46,7 @@ public class LambdaTest {
     }
 
     @Test
+    @Disabled
     public void multiply() {
         int a = 5;
         int b = 6;
@@ -50,6 +55,7 @@ public class LambdaTest {
     }
 
     @Test
+    @Disabled
     public void shouldSortStrings() throws Exception {
         List<String> input = Arrays.asList("C", "F", "A", "D", "B", "E");
         List<String> result = Lambda.sortStrings(input);
