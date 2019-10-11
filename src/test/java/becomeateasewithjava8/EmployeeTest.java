@@ -3,6 +3,7 @@ package becomeateasewithjava8;
 import becomeateasewithjava8.builders.EmployeeBuilder;
 import becomeateasewithjava8.enums.Department;
 import becomeateasewithjava8.model.Employee;
+import becomeateasewithjava8.predicates.EmployeePredicates;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -27,7 +28,7 @@ public class EmployeeTest {
                 new Employee("Frank", 20, Department.DEVELOPMENT, 9999d, 'M'),
                 new Employee("Peter", 24, Department.DESIGN, 3000d, 'M')
         );
-        employees = employees.stream().filter(employee -> employee.getGender().orElse('-') == 'M').collect(Collectors.toList());
+        employees = employees.stream().filter(EmployeePredicates.isMale()).collect(Collectors.toList());
 
         assertThat(employees)
                 .extracting(Employee::getName, Employee::getGender)
