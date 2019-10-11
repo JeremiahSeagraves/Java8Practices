@@ -21,13 +21,7 @@ public class EmployeeTest {
     @Test
     public void shouldReturnMaleEmployees() {
         List<Employee> employees = asList(
-                EmployeeBuilder.builder()
-                        .name("John")
-                        .age(20)
-                        .department(Department.DEVELOPMENT)
-                        .salary(9999d)
-                        .gender('M')
-                        .build(),
+                EmployeeBuilder.builder().name("John").age(20).department(Department.DEVELOPMENT).salary(9999d).gender('M').build(),
                 new Employee("Mary", 22, Department.DEVELOPMENT, 9999d, 'F'),
                 new Employee("Laura", 21, Department.DEVELOPMENT, 9999d, 'F'),
                 new Employee("Frank", 20, Department.DEVELOPMENT, 9999d, 'M'),
