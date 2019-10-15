@@ -74,6 +74,6 @@ public class StreamTest {
                 .sorted()
                 .collect(Collectors.toList());
         logger.debug(list.toString());
-        assertThat(list).containsExactlyInAnyOrder("LION", "LOG", "L", "LOUISE");
+        assertThat(list).containsExactly("L", "LION", "LOG", "LOUISE");
     }
 }
