@@ -2,11 +2,14 @@ package becomeateasewithjava8.builders;
 
 import becomeateasewithjava8.enums.Department;
 import becomeateasewithjava8.model.Employee;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Created by Jeremiah Seagraves on oct, 10, 2019
  */
 public class EmployeeBuilder {
+    private final static Logger log = LoggerFactory.getLogger(EmployeeBuilder.class);
 
     private final String name;
     private final int age;
@@ -23,7 +26,8 @@ public class EmployeeBuilder {
         this.gender = gender;
     }
 
-    public Employee build(){
+    public Employee build() {
+        log.info("Building new Employee");
         return new Employee(name, age, department, salary, gender);
     }
 

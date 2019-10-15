@@ -3,13 +3,17 @@ package becomeateasewithjava8;
 import becomeateasewithjava8.builders.EmployeeBuilder;
 import becomeateasewithjava8.enums.Department;
 import becomeateasewithjava8.model.Employee;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
+import java.util.stream.Collectors;
 
 import static java.util.Arrays.asList;
 import static org.assertj.core.api.Assertions.assertThat;
@@ -18,6 +22,8 @@ import static org.assertj.core.api.Assertions.assertThat;
  * Created by Jeremiah Seagraves on oct, 11, 2019
  */
 public class StreamTest {
+
+    private final static Logger logger = LoggerFactory.getLogger(StreamTest.class);
 
     private static Employee getRandomEmployee() {
         Random random = new Random();
@@ -33,6 +39,7 @@ public class StreamTest {
     }
 
     @Test
+    @Disabled
     public void parallelStreamShouldBeFasterThanSequential() {
         int amount = 10000000;//10 millones de registros
         List<Employee> values = new ArrayList<>(amount);
@@ -56,5 +63,17 @@ public class StreamTest {
         System.out.println(String.format("parallel sort took: %d ms", parallelTime));
 
         assertThat(sequentialTime).isGreaterThan(parallelTime);
+    }
+
+    @Test
+    public void shouldRemoveAllNotStartingWithLAndReturnItSortedInUpperCase() {
+        List<String> list = asList("Monkey", "Java", "Lion", "Log", "Test", "NotL", "l", "Louise");
+        list = list.stream()
+                .map(String::toUpperCase)
+                .filter(s -> s.startsWith("L"))
+                .sorted()
+                .collect(Collectors.toList());
+        logger.debug(list.toString());
+        assertThat(list).containsExactlyInAnyOrder("LION", "LOG", "L", "LOUISE");
     }
 }
