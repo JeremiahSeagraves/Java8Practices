@@ -19,12 +19,12 @@ public class ExtraTest {
         final char[] charColumns = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
         final String stringColumns = new String(charColumns);
 
-        int stringLengthWithoutLastCharacter = column.length() - 1;
+        int stringLengthMinusOne = column.length() - 1;
         int firstCharacterValue = stringColumns.indexOf(column.charAt(0)) + 1;
-        int lastCharacterValue = stringColumns.indexOf(column.charAt(stringLengthWithoutLastCharacter)) + 1;
+        int lastCharacterValue = stringColumns.indexOf(column.charAt(stringLengthMinusOne)) + 1;
 
-        return stringLengthWithoutLastCharacter >= 1 ?
-                stringLengthWithoutLastCharacter * ALPHABET_QUANTITY + lastCharacterValue :
+        return stringLengthMinusOne >= 1 ?
+                stringLengthMinusOne * ALPHABET_QUANTITY + lastCharacterValue :
                 firstCharacterValue;
     }
 
