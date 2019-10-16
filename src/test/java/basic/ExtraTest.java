@@ -21,7 +21,7 @@ public class ExtraTest {
 
         int stringLengthWithoutLastCharacter = column.length() - 1;
         int firstCharacterValue = stringColumns.indexOf(column.charAt(0)) + 1;
-        int lastCharacterValue = stringColumns.indexOf(column.charAt(column.length() - 1)) + 1;
+        int lastCharacterValue = stringColumns.indexOf(column.charAt(stringLengthWithoutLastCharacter)) + 1;
 
         return stringLengthWithoutLastCharacter >= 1 ?
                 stringLengthWithoutLastCharacter * ALPHABET_QUANTITY + lastCharacterValue :
