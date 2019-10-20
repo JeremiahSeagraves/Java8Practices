@@ -1,5 +1,7 @@
 package becomeateasewithjava8;
 
+import becomeateasewithjava8.lambda.Lambda;
+import becomeateasewithjava8.lambda.TransactionLambda;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;

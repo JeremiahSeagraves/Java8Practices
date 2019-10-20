@@ -1,4 +1,4 @@
-package becomeateasewithjava8;
+package becomeateasewithjava8.lambda;
 
 
 import java.util.Comparator;

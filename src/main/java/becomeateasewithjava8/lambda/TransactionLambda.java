@@ -1,9 +1,9 @@
-package becomeateasewithjava8;
+package becomeateasewithjava8.lambda;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class TransactionLambda implements Runnable{
+public class TransactionLambda implements Runnable {
 
     private static Logger logger = LoggerFactory.getLogger(TransactionLambda.class);
     private boolean consumed = false;
