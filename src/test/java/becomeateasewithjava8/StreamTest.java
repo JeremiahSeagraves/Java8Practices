@@ -68,7 +68,6 @@ public class StreamTest {
     }
 
     @Test
-    @Disabled
     public void shouldRemoveAllNotStartingWithLAndReturnItSortedInUpperCase() {
         List<String> list = asList("Monkey", "Java", "Lion", "Log", "Test", "NotL", "l", "Louise");
         list = list.stream()
@@ -81,7 +80,6 @@ public class StreamTest {
     }
 
     @Test
-    @Disabled
     public void shouldMapStringsToUpperCase() {
         List<String> input = asList("This", "is", "java", "8");
         List<String> result = Stream8.mapToUpperCase(input);
@@ -90,7 +88,6 @@ public class StreamTest {
     }
 
     @Test
-    @Disabled
     public void shouldReturnSquareRoot() {
         List<Integer> numbers = Arrays.asList(1, 4, 16, 256);
         List<Integer> squares = Stream8.returnSquareRoot(numbers);
@@ -99,7 +96,6 @@ public class StreamTest {
     }
 
     @Test
-    @Disabled
     public void shouldReturnAgeFromUser() {
         List<User> users = User.getUsersWithAge(18, 20);
         List<Integer> ageFromUsers = Stream8.getAgeFromUsers(users);
@@ -108,42 +104,42 @@ public class StreamTest {
     }
 
     @Test
-    @Disabled
     public void shouldReturnFirstTwo() {
         List<User> users = User.getUsersWithAge(18, 20, 21, 22, 23);
         users = Stream8.getLimitedUserList(users, 2);
+        logger.debug(users.toString());
         assertThat(users).isEqualTo(Arrays.asList(users.get(0), users.get(1)));
     }
 
     @Test
-    @Disabled
     public void shouldReturnNumberOfUsersOlderThen25() {
         List<User> users = User.getUsersWithAge(18, 20, 21, 22, 23, 24, 25, 26);
         Integer count = Stream8.countUsersOlderThen25(users);
+        logger.debug(count.toString());
         assertThat(count == 1).isTrue();
     }
 
     @Test
-    @Disabled
     public void shouldReturnDistinctAges() {
         List<User> users = User.getUsersWithAge(18, 20, 20, 21, 22, 22, 23, 24, 25, 26);
         List<Integer> distinctAges = Stream8.getDistinctAges(users);
+        logger.debug(distinctAges.toString());
         assertThat(distinctAges).isEqualTo(Arrays.asList(18, 20, 21, 22, 23, 24, 25, 26));
     }
 
     @Test
-    @Disabled
     public void shouldSumIntegersInCollection() {
         List<Integer> integers = asList(1, 2, 3, 4, 5);
         Integer result = Stream8.sum(integers);
+        logger.debug(result.toString());
         assertThat(result).isEqualTo(1 + 2 + 3 + 4 + 5);
     }
 
     @Test
-    @Disabled
     public void shouldSkipInCollection() {
         List<Integer> integers = asList(1, 2, 3, 4, 5);
         List<Integer> result = Stream8.skip(integers, 2);
+        logger.debug(result.toString());
         assertThat(result).isEqualTo(Arrays.asList(3, 4, 5));
     }
 
@@ -158,7 +154,7 @@ public class StreamTest {
     @Test
     public void shouldReturnDistinctLetters() {
         List<String> names = asList("Homer Simpson", "Marge Simpson", "Bart Simpson", "Kent Brockman");
-        List<String> result =  Stream8.getDistinctLetters(names);
+        List<String> result = Stream8.getDistinctLetters(names);
         logger.debug(result.toString());
         assertThat(result).isEqualTo(Arrays.asList("H", "o", "m", "e", "r", " ", "S", "i", "p", "s", "n", "M", "a", "g", "B", "t", "K", "c", "k"));
     }

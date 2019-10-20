@@ -3,7 +3,10 @@ package becomeateasewithjava8.stream;
 
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
-import java.util.*;
+import java.util.IntSummaryStatistics;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
@@ -21,15 +24,15 @@ public class Stream8 {
     }
 
     public static List<Integer> getDistinctAges(List<User> users) {
-        throw new NotImplementedException();
+        return users.stream().map(User::getAge).distinct().collect(Collectors.toList());
     }
 
     public static List<User> getLimitedUserList(List<User> users, int limit) {
-        throw new NotImplementedException();
+        return users.stream().limit(limit).collect(Collectors.toList());
     }
 
     public static Integer countUsersOlderThen25(List<User> users) {
-        throw new NotImplementedException();
+        return users.stream().filter(user -> user.getAge() > 25).mapToInt(value -> 1).sum();
     }
 
     public static List<String> mapToUpperCase(List<String> strings) {
@@ -37,11 +40,11 @@ public class Stream8 {
     }
 
     public static Integer sum(List<Integer> integers) {
-        throw new NotImplementedException();
+        return integers.stream().mapToInt(Integer::intValue).sum();
     }
 
     public static List<Integer> skip(List<Integer> integers, Integer toSkip) {
-        throw new NotImplementedException();
+        return integers.stream().skip(toSkip).collect(Collectors.toList());
     }
 
     public static List<String> getFirstNames(List<String> names) {

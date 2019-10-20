@@ -55,4 +55,12 @@ public class User {
         return users;
     }
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", male=" + male +
+                '}';
+    }
 }
