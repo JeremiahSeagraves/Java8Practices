@@ -61,7 +61,7 @@ public class Stream8 {
 
 
     public static String separateNamesByComma(List<User> users) {
-        throw new NotImplementedException();
+        return users.stream().map(User::getName).collect(Collectors.joining(", "));
     }
 
     public static double getAverageAge(List<User> users) {

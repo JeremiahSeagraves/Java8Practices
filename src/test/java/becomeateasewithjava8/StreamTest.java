@@ -167,6 +167,7 @@ public class StreamTest {
                 new User("Maggie"),
                 new User("Bart"));
         String result = Stream8.separateNamesByComma(input);
+        logger.debug(result);
         assertThat(result).isEqualTo("Homer, Maggie, Bart");
     }
 
