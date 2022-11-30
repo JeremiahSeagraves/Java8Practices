@@ -12,12 +12,12 @@ public class Lector {
         List<Pregunta> preguntas = new ArrayList<>();
         for (String[] unaLinea :leerArchivo(nombreArchivo, "\\|")) {
             List<Respuesta> respuestas = List.of(
-                    new Respuesta(unaLinea[1], false),
                     new Respuesta(unaLinea[2], false),
-                    new Respuesta(unaLinea[3], false)
+                    new Respuesta(unaLinea[3], false),
+                    new Respuesta(unaLinea[4], false)
             );
-            respuestas.get(Integer.parseInt(unaLinea[4]) - 1).setCorrecta(true);
-            preguntas.add(new Pregunta(unaLinea[0], respuestas));
+            respuestas.get(Integer.parseInt(unaLinea[5]) - 1).setCorrecta(true);
+            preguntas.add(new Pregunta(unaLinea[0],CategoriaPregunta.obtenerPorId(Integer.parseInt(unaLinea[1])) ,respuestas));
         }
         return preguntas;
     }

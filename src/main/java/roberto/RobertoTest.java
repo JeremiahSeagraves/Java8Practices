@@ -14,7 +14,7 @@ public class RobertoTest {
         List<Pregunta> preguntas = Lector.leerPreguntas("preguntas.csv");
 
         for (Pregunta pregunta: preguntas) {
-            System.out.println(pregunta.getPregunta());
+            System.out.println(pregunta.getPregunta() + " - " + pregunta.getCategoria().nombre);
             System.out.println(Arrays.toString(pregunta.getRespuestas().toArray()));
         }
 
